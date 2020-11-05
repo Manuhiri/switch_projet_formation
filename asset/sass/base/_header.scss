@@ -1,0 +1,103 @@
+#header{
+    margin: 50px 0;
+
+    .image{
+        position: relative;
+        figure {
+            position: relative;
+
+            .triangle_darkPurple{
+                position: absolute;
+                top: 0;
+                right: 0;
+
+                @include triangle(290 200, $darkPurple);
+
+                @media screen and (max-width: map-get($breakpoint, 'sm')){
+                    @include triangle(300 200, $darkPurple);
+                }//end media "sm"
+
+                @media screen and (max-width: map-get($breakpoint, 'md')){
+                    @include triangle(245 150, $darkPurple);
+                }//end media "md"
+
+                @media screen and (min-width: map-get($breakpoint, 'xl')){
+                    @include triangle(360 240, $darkPurple);
+                }//end media "xl"
+
+            }//end .triangle_darkPurple
+            .triangle_lightOrange{
+                position: absolute;
+                top: 0;
+                right: 0;
+
+                @include triangle(100 67, $lightOrange)
+
+            }//end .triangle_lightOrange
+            .triangle_mediumOrange{
+                position: absolute;
+                top: 0;
+                right: 0;
+
+                @include triangle(80 55, $mediumOrange)
+            }//end .triangle_mediumOrange
+            .triangle_lightGreen{
+                position: absolute;
+                bottom: 0;
+                left: 0;
+
+                @include triangle_revers (0, $darkGreen)
+            }// end .triangle_lightGreen
+            h2{
+                position: absolute;
+                top: 70px;
+                right: 15px;
+                transform: rotate(33deg);
+                font-family: $headerFont;
+                font-size: $biggerFontSize;
+                color: $white;
+                
+                @media screen and (max-width: map-get($breakpoint, 'xl')){
+                        top: 35px;
+                        right: -10px;
+                }//end media "xl"
+            }//end h2
+            a{
+                font-family: $bodyFont;
+                font-size: $defaultFontSize;
+                position: absolute;
+                bottom: 10px;
+                left: 10px;
+                color: transparent;
+                text-decoration: none;
+            }
+        }//end figure
+
+        &:hover{
+            figure{
+                background-color: $white;
+            }// end hover figure
+            img{
+                opacity: 60%;
+            }// end hover img
+            .triangle_darkPurple{
+                border-width: 500px 0 0 0;
+            }// end hover .triangle_darkPurple
+            .triangle_lightOrange{
+                border-width: 0 400px 0 0;
+            }// end hover .trioangle_lightOrange
+            .triangle_mediumOrange{
+                border-width: 400px 0 0 0;
+            }// end hover .triangle_mediumOrange
+            .triangle_lightGreen{
+                border-width: 0 245px 150px 0;
+            }// end hover .triangle_lightGreen
+            h2{
+                color: transparent;;
+            }// end hover h2
+            a{
+                color: $white;;
+            }// end hover a
+        }//end hover
+    }//end .image
+}//end header

@@ -1,0 +1,16 @@
+// import variable, function & mixins
+@import "base/variables";
+@import "base/function";
+@import "base/mixin";
+
+//import third party framework
+@import "reset/reset";
+
+//import site specific styles
+@import "base/general";
+@import "base/body";
+@import "base/header";
+@import "base/index";
+@import "base/nav";
+@import "base/gestion";
+@import "base/bootstrap";

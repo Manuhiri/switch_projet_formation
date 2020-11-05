@@ -1,0 +1,27 @@
+nav{
+    .logo{
+        position: absolute;
+        width: 100px;
+        top: -24px;
+    }//end logo
+
+    #navbarSupportedContent{
+        margin-left: 130px;
+        li{
+            div{
+                a{
+                    color: $darkPurple;
+                }//end li > div > a
+            }//end li > div
+
+        }//end li
+    }//end #navbarSupportedContent
+
+    
+    a{
+        font-family: $titleFont;
+        font-size: $reducedFontSize;
+        color: $white;
+    }//end nav > a
+
+}//end nav

@@ -1,0 +1,21 @@
+@function unitize($value) {
+    //Fonction unitless = savoir si la valeur à une unité de mesure
+    @if type_of($value) == "number" and unitless($value) {
+        //Function type_of = connaitre le type de la value
+        //Foncion unquote = retirer mes guillemet de la chaine de caractère
+        @return unquote($value + $defaultUnit);
+
+    }@else if length($value) > 1{
+            $toReturn: ();
+            @each $item in $value{
+                $currentValue: unitize($item);
+                $toReturn: join($toReturn, $currentValue);
+            }
+            @return $toReturn;
+
+        }@else{
+        @return unquote($value);
+        }
+    
+
+}

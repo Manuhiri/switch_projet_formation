@@ -1,0 +1,42 @@
+//colors
+//theme specific
+$darkPurple: #35014f;
+$mediumPurple: #5B0488;
+$lightPurple: #861dbb;
+$darkGreen: #005c0b;
+$mediumGreen: #009e13;
+$lightGreen: #17d12e;
+$darkOrange: #775200;
+$mediumOrange: #cc8b00;
+$lightOrange: #ffb71c;
+$white: #fff;
+$black: #000;
+
+//default unit
+$errorColor: red;
+$defaultSize: '100px';
+$defaultUnit: 'px';
+
+//Font
+$headerFont: 'Dancing Script', cursive;
+$bodyFont: 'Open Sans Condensed', sans-serif;
+$titleFont: 'Epilogue', sans-serif;
+
+//Font size
+$defaultFontSize: 1.5rem;
+$augmentedFontSize: $defaultFontSize * 1.7;
+$biggerFontSize: $defaultFontSize * 2;
+$reducedFontSize: $defaultFontSize * 0.8;
+$smallFontSize: $defaultFontSize * 0.6;
+$mainTitleSize: $defaultFontSize * 1.8;
+$rightTitleSize: $defaultFontSize * 1.375;
+$h2size: $defaultFontSize * 1.5;
+$h3size: $defaultFontSize * 1.2;
+
+//Breakpoint
+$breakpoint:(
+    sm: 575px,  // portrait phone
+    md: 767px,  // landscape phones
+    lg: 991px,  // tablets
+    xl: 1199px, // desktops
+)

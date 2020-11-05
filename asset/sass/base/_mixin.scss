@@ -1,0 +1,17 @@
+@mixin triangle ( $size:$defaultSize, $color:$defaultColor ) {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 unitize($size) 0;
+    border-color: transparent $color transparent transparent;
+    transition: border-width 0.5s;
+}
+
+@mixin triangle_revers ( $size:$defaultSize, $color:$defaultColor ) {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 unitize($size) 0;
+    border-color: transparent transparent $color transparent;
+    transition: border-width 0.5s;
+}

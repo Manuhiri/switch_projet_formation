@@ -1,0 +1,39 @@
+main{
+    margin-top: 50px;
+    background-color: $white;
+    width: 90%!important;
+}
+
+h1{
+    font-family: $titleFont;
+    font-size: $biggerFontSize;
+    padding-top: 30px;
+    color: blue;
+}
+
+h2{
+    font-family: $titleFont;
+    font-size: $augmentedFontSize;
+    padding: 10px;
+}
+
+i, a, a:hover{
+    color: $darkPurple;
+}
+
+.bg-danger{
+    background-color: $errorColor!important;
+}
+
+th{
+    color: $white;
+}
+
+td, th {
+    padding: 10px;
+    border: $darkOrange 1px solid;
+}
+
+canvas{
+    z-index: -1;
+}

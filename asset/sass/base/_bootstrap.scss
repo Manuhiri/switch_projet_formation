@@ -1,0 +1,13 @@
+.bg-primary{
+    background-color: $darkGreen!important;
+}
+
+.bg-secondary{
+    background-color: $darkGreen!important;
+}
+
+.btn-primary, .table-primary th{
+    $white: #fff;
+    background-color: $darkPurple;
+    border-color: $darkOrange;
+}
